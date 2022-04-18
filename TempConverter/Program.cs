@@ -11,8 +11,8 @@ namespace TempConv
             string input;
 
             Console.WriteLine("Temperature in F:");
-            input = Console.ReadLine();
-            fahrenheit = double.Parse(input);
+            input = Console.ReadLine(); //input will be string
+            fahrenheit = double.Parse(input); //typecast  Console.Readline input from String to a double
 
             celsius = (fahrenheit - 32) * 5 / 9;
             Console.WriteLine("The Temperature in C is: " + celsius);
